@@ -52,7 +52,7 @@ header {
   justify-content: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
-.header_title .image_title {
+.header_title .logo {
   width: 45%;
 }
 
@@ -67,12 +67,88 @@ header {
   display: flex;
   align-items: center;
 }
-
-.barre_recherche i {
+.recherche_container .barre_recherche i {
   padding-right: 16px;
 }
-
-.barre_recherche_txt {
+.recherche_container .barre_recherche .txt_recherche {
   background: #eaeaea;
   border: none;
+}
+
+/* Introduction */
+main {
+  background: #f7f7f7;
+}
+
+.introduction {
+  justify-content: center;
+}
+.introduction .titre_introduction {
+  text-align: center;
+  width: 74%;
+  padding: 39px 0 15px 0;
+}
+.introduction .introduction_txt {
+  text-align: center;
+  width: 85%;
+  padding-bottom: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.btn_mod {
+  margin-bottom: 55px;
+  padding: 13px 19px;
+  color: white;
+  background-image: linear-gradient(0deg, #9356dc 11.4%, #ff79da 124%);
+  /* Shadow/Button */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+/* Fonctionnement */
+.fonctionnement {
+  background: white;
+  padding: 45px 0 55px 20px;
+}
+.fonctionnement .titre {
+  padding-bottom: 15px;
+}
+
+.fonctionnement_liste {
+  counter-reset: liste_num;
+  padding-left: 10px;
+}
+.fonctionnement_liste .liste {
+  display: flex;
+  width: 95%;
+  padding: 28px 0;
+  background: #f7f7f7;
+  margin: 12.5px 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.fonctionnement_liste .liste i {
+  padding: 0 25px 0 35px;
+}
+.fonctionnement_liste .liste .liste_icon {
+  color: #7e7e7e;
+}
+.fonctionnement_liste .liste .liste_icon1 {
+  color: #9356dc;
+}
+.fonctionnement_liste .liste::before {
+  content: counter(liste_num);
+  counter-increment: liste_num 1;
+  background: #9356dc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  left: 20px;
 }/*# sourceMappingURL=style_accueil.css.map */
