@@ -1,6 +1,12 @@
 
 /* Général */
 
+// Variables
+
+$primaire:#9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+
 *
 {
     font-family: "roboto" , sans-serif;
@@ -49,10 +55,15 @@ ol
     line-height: 21px;
 }
 
-.column_center
+.paragraph
+{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.align_center
 {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -74,6 +85,7 @@ header
     display: flex;
     justify-content: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1;
 
     .logo
     {
@@ -91,8 +103,6 @@ header
     .barre_recherche
     {
         width: 37%;
-        display: flex;
-        align-items: center;
 
         i
         {
@@ -121,6 +131,7 @@ main
 .introduction
 {
     justify-content: center;
+    flex-direction: column;
 
     .titre_introduction
     {
@@ -134,8 +145,6 @@ main
         text-align: center;
         width: 85%;
         padding-bottom: 25px;
-        font-size: 18px;
-        font-weight: 300;
     }
 }
 
@@ -195,7 +204,7 @@ main
         
         .liste_icon1
         {
-            color: #9356dc;
+            color: $primaire;
         }
     }
 
@@ -203,7 +212,7 @@ main
     {
         content: counter(liste_num);
         counter-increment: liste_num 1;
-        background: #9356dc;
+        background: $primaire;
         color: white;
         display: flex;
         align-items: center;
@@ -258,7 +267,7 @@ main
         right: 35px;
         margin-top: 15px;
         padding: 8px;
-        background: #99e2d0;
+        background: $tertiaire;
         font-weight: 500;
         font-size: 14px;
         text-align: center;
@@ -276,13 +285,7 @@ main
     {
         padding: 14px 0 14px 14px;
 
-        .sous_titre
-        {
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        p
+        .paragraph
         {
             padding-top: 5px;
         }
@@ -290,18 +293,73 @@ main
 
     .card_icon
     {
-        display: flex;
-        align-items: center;
         justify-content: center;
         width: 20.87%;
+
+        .fa-heart
+        {
+            font-size: 22px;
+        }
+
+        .fa-heart:hover
+        {
+            font-weight: 900;
+            color: transparent;
+            background: linear-gradient(180deg, #9356dc 11.4%, #ff79da 124%);
+            background-clip: text;
+            transition: 0.8s;
+        }
     }
 }
 
-.card_icon
-{
 
-    i
+
+
+
+/* Footer */
+
+.footer_container
+{
+    padding: 22px 0 20px 25px;
+    background: #353535;
+
+    .title
     {
-        font-size: 22px;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Shrikhand';
+        color: white;
+        padding-bottom: 12px;
+    }
+
+    .liste
+    {
+        padding: 0;
+        color: white;
+
+        li
+        {
+            display: flex;
+            padding: 4px 0;
+            align-items: center;
+        }
+
+        .link
+        {
+            color: white;
+        }
+
+        .fa-solid
+        {
+            font-size: 12px;
+            margin-right: 10px;
+        }
+
+        .fa-handshake-simple
+        {
+            transform-origin: center;
+            transform: rotate(-45deg);
+            margin-right: 5px;
+        }
     }
 }

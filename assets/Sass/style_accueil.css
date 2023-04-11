@@ -40,9 +40,13 @@ ol {
   line-height: 21px;
 }
 
-.column_center {
+.paragraph {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.align_center {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -57,6 +61,7 @@ header {
   display: flex;
   justify-content: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 .header_title .logo {
   width: 45%;
@@ -70,8 +75,6 @@ header {
 }
 .recherche_container .barre_recherche {
   width: 37%;
-  display: flex;
-  align-items: center;
 }
 .recherche_container .barre_recherche i {
   padding-right: 16px;
@@ -88,6 +91,7 @@ main {
 
 .introduction {
   justify-content: center;
+  flex-direction: column;
 }
 .introduction .titre_introduction {
   text-align: center;
@@ -98,8 +102,6 @@ main {
   text-align: center;
   width: 85%;
   padding-bottom: 25px;
-  font-size: 18px;
-  font-weight: 300;
 }
 
 .btn_mod {
@@ -178,8 +180,7 @@ main {
 .card .image {
   width: 100%;
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .card .badge_card {
@@ -202,20 +203,54 @@ main {
 .card_description .card_txt {
   padding: 14px 0 14px 14px;
 }
-.card_description .card_txt .sous_titre {
-  font-size: 18px;
-  font-weight: 700;
-}
-.card_description .card_txt p {
+.card_description .card_txt .paragraph {
   padding-top: 5px;
 }
 .card_description .card_icon {
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 20.87%;
 }
-
-.card_icon i {
+.card_description .card_icon .fa-heart {
   font-size: 22px;
+}
+.card_description .card_icon .fa-heart:hover {
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(180deg, #9356dc 11.4%, #ff79da 124%);
+  background-clip: text;
+  transition: 0.8s;
+}
+
+/* Footer */
+.footer_container {
+  padding: 22px 0 20px 25px;
+  background: #353535;
+}
+.footer_container .title {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Shrikhand";
+  color: white;
+  padding-bottom: 12px;
+}
+.footer_container .liste {
+  padding: 0;
+  color: white;
+}
+.footer_container .liste li {
+  display: flex;
+  padding: 4px 0;
+  align-items: center;
+}
+.footer_container .liste .link {
+  color: white;
+}
+.footer_container .liste .fa-solid {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.footer_container .liste .fa-handshake-simple {
+  transform-origin: center;
+  transform: rotate(-45deg);
+  margin-right: 5px;
 }/*# sourceMappingURL=style_accueil.css.map */
