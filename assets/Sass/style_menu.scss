@@ -1,0 +1,106 @@
+
+/* Général */
+
+// Variables
+
+$primaire:#9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+
+*
+{
+    font-family: "roboto" , sans-serif;
+    margin: 0;
+}
+
+.page_container
+{
+    max-width: 767px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.plat
+{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.paragraph
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+
+/* Header */
+
+header
+{
+    
+}
+
+
+
+
+
+/* Footer */
+
+.footer_container
+{
+    padding: 22px 0 20px 25px;
+    background: #353535;
+
+    .title
+    {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Shrikhand';
+        color: white;
+        padding-bottom: 12px;
+    }
+
+    .liste
+    {
+        padding: 0;
+        color: white;
+
+        li
+        {
+            display: flex;
+            padding: 4px 0;
+            align-items: center;
+        }
+
+        .link
+        {
+            color: white;
+        }
+
+        .fa-solid
+        {
+            font-size: 12px;
+            margin-right: 10px;
+        }
+
+        .fa-handshake-simple
+        {
+            transform-origin: center;
+            transform: rotate(-45deg);
+            margin-right: 5px;
+        }
+    }
+}

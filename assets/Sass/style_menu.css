@@ -1,1 +1,65 @@
-/*# sourceMappingURL=style_menu.css.map */
+@charset "UTF-8";
+/* Général */
+* {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+
+.page_container {
+  max-width: 767px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.plat {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Header */
+/* Footer */
+.footer_container {
+  padding: 22px 0 20px 25px;
+  background: #353535;
+}
+.footer_container .title {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Shrikhand";
+  color: white;
+  padding-bottom: 12px;
+}
+.footer_container .liste {
+  padding: 0;
+  color: white;
+}
+.footer_container .liste li {
+  display: flex;
+  padding: 4px 0;
+  align-items: center;
+}
+.footer_container .liste .link {
+  color: white;
+}
+.footer_container .liste .fa-solid {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.footer_container .liste .fa-handshake-simple {
+  transform-origin: center;
+  transform: rotate(-45deg);
+  margin-right: 5px;
+}/*# sourceMappingURL=style_menu.css.map */
