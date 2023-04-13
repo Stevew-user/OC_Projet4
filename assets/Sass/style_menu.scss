@@ -184,7 +184,7 @@ main
     {
         padding: 15px 45px;
         color: white;
-        background-image: linear-gradient(0deg, #9356dc 11.4%, #ff79da 124%);
+        background-image: linear-gradient(0deg, $primaire 11.4%, $secondaire 124%);
         /* Shadow/Button */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
