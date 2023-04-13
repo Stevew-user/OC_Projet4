@@ -201,23 +201,23 @@ main
         {
             color: $primaire;
         }
-    }
 
-    .liste::before
-    {
-        content: counter(liste_num);
-        counter-increment: liste_num 1;
-        background: $primaire;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 15px;
-        height: 15px;
-        padding: 5px;
-        border-radius: 20px;
-        position: absolute;
-        left: 20px;
+        &::before
+        {
+            content: counter(liste_num);
+            counter-increment: liste_num 1;
+            background: $primaire;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            padding: 5px;
+            border-radius: 20px;
+            position: absolute;
+            left: 20px;
+        }
     }
 }
 
@@ -294,15 +294,15 @@ main
         .fa-heart
         {
             font-size: 22px;
-        }
 
-        .fa-heart:hover
-        {
-            font-weight: 900;
-            color: transparent;
-            background: linear-gradient(180deg, #9356dc 11.4%, #ff79da 124%);
-            background-clip: text;
-            transition: 0.8s;
+            &:hover
+            {
+                font-weight: 900;
+                color: transparent;
+                background: linear-gradient(180deg, $primaire 11.4%, $secondaire 124%);
+                background-clip: text;
+                transition: 0.6s;
+            }
         }
     }
 }

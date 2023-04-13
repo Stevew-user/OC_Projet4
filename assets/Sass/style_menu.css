@@ -89,7 +89,7 @@ main {
   color: transparent;
   background: linear-gradient(180deg, #9356dc 11.4%, #ff79da 124%);
   background-clip: text;
-  transition: 0.8s;
+  transition: 0.6s;
 }
 .main_container .sous_titre {
   text-transform: uppercase;
