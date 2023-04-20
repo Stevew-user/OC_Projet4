@@ -7,6 +7,7 @@
 
 .page_container {
   max-width: 767px;
+  margin: 0 auto;
 }
 
 a {
@@ -169,6 +170,7 @@ main {
   background: #FFFFFF;
   margin: 18px 0;
   height: 260px;
+  position: relative;
   /* Shadow/Card */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -181,9 +183,9 @@ main {
 }
 .card .badge_card {
   position: absolute;
-  right: 35px;
-  margin-top: 15px;
-  padding: 8px;
+  right: 20px;
+  top: 15px;
+  padding: 7px 9px;
   background: #99e2d0;
   font-weight: 500;
   font-size: 14px;
@@ -249,4 +251,53 @@ main {
   transform-origin: center;
   transform: rotate(-45deg);
   margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .page_container {
+    max-width: none;
+  }
+  /* Fonctionnement */
+  .fonctionnement_liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .fonctionnement_liste .liste {
+    width: 30%;
+    position: relative;
+  }
+  .fonctionnement_liste .liste::before {
+    left: -15px;
+    align-self: center;
+  }
+  /* Restaurant */
+  .restaurant {
+    padding: 50px 180px;
+  }
+  .restaurant article {
+    width: 45%;
+  }
+  .card_media_queries {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .card_media_queries .card {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Footer */
+  .footer_container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 65px;
+  }
+  .footer_container .liste {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer_container .liste li {
+    display: initial;
+  }
 }/*# sourceMappingURL=style_accueil.css.map */
