@@ -18,7 +18,7 @@ ul {
 }
 
 .small_font {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -116,10 +116,14 @@ main {
   margin: 12px 0;
   align-items: end;
 }
-.card .card_title {
+.card .plat .card_title {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+}
+.card .plat p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .commander {
@@ -197,5 +201,14 @@ main {
     display: flex;
     flex-direction: row-reverse;
     padding: 55px 65px 20px 25px;
+  }
+  .footer_container .liste {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-right: 30px;
+  }
+  .footer_container .liste li {
+    display: initial;
   }
 }/*# sourceMappingURL=style_menu.css.map */
