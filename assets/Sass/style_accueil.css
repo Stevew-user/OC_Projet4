@@ -33,12 +33,12 @@ ul {
 
 .sous_titre {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 21px;
 }
 
 .paragraph {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -47,6 +47,7 @@ ul {
   align-items: center;
 }
 
+/* Loader */
 /* Header */
 header {
   display: flex;
@@ -67,14 +68,13 @@ header {
 .recherche_container {
   background: #eaeaea;
   height: 50px;
-  display: flex;
   justify-content: center;
+}
+.recherche_container i {
+  padding-right: 16px;
 }
 .recherche_container .barre_recherche {
   width: 37%;
-}
-.recherche_container .barre_recherche i {
-  padding-right: 16px;
 }
 .recherche_container .barre_recherche .txt_recherche {
   background: #eaeaea;
@@ -165,15 +165,16 @@ main {
 .restaurant .titre {
   padding: 0 0 10px 5px;
 }
+.restaurant article {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: white;
+  margin: 18px 0;
+}
 
 .card {
-  background: #FFFFFF;
-  margin: 18px 0;
   height: 260px;
   position: relative;
-  /* Shadow/Card */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
 }
 .card .image {
   width: 100%;
@@ -190,7 +191,7 @@ main {
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-  width: 16%;
+  width: 60px;
   color: #008766;
 }
 
@@ -199,14 +200,14 @@ main {
   justify-content: space-between;
 }
 .card_description .card_txt {
-  padding: 14px 0 14px 14px;
+  padding: 16px 0 0 13px;
 }
 .card_description .card_txt .paragraph {
   padding-top: 5px;
 }
 .card_description .card_icon {
   justify-content: center;
-  width: 20.87%;
+  width: 16%;
 }
 .card_description .card_icon .fa-heart {
   font-size: 22px;
@@ -257,6 +258,20 @@ main {
   .page_container {
     max-width: none;
   }
+  /* Header */
+  .header_title {
+    z-index: initial;
+  }
+  .header_title .logo {
+    width: 200px;
+  }
+  /* Introduction */
+  .introduction .titre_introduction {
+    font-size: 40px;
+  }
+  .introduction .introduction_txt {
+    padding: 25px 0;
+  }
   /* Fonctionnement */
   .fonctionnement_liste {
     display: flex;
@@ -287,15 +302,20 @@ main {
     display: flex;
     flex-direction: column;
   }
+  .card_media_queries .card .badge_card {
+    bottom: 215px;
+  }
   /* Footer */
   .footer_container {
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 65px;
+    padding: 55px 65px 20px 25px;
   }
   .footer_container .liste {
     display: flex;
     justify-content: space-around;
+    width: 50%;
+    padding-right: 30px;
   }
   .footer_container .liste li {
     display: initial;

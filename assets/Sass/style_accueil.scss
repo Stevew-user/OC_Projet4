@@ -47,13 +47,13 @@ ul
 .sous_titre
 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 21px;
 }
 
 .paragraph
 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -61,6 +61,18 @@ ul
 {
     display: flex;
     align-items: center;
+}
+
+/* Loader */
+
+.loader_container
+{
+    
+
+    .loader
+    {
+
+    }
 }
 
 
@@ -93,17 +105,16 @@ header
 {
     background: #eaeaea;
     height: 50px;
-    display: flex;
     justify-content: center;
+
+    i
+    {
+    padding-right: 16px;
+    }
 
     .barre_recherche
     {
         width: 37%;
-
-        i
-        {
-        padding-right: 16px;
-        }
 
         .txt_recherche
         {
@@ -236,19 +247,20 @@ main
     {
         padding: 0 0 10px 5px;
     }
+
+    article
+    {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        background: white;
+        margin: 18px 0;
+    }
 }
 
 .card
 {
-    
-    background: #FFFFFF;
-    margin: 18px 0;
     height: 260px;
     position: relative;
-
-    /* Shadow/Card */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
 
     .image
     {
@@ -268,7 +280,7 @@ main
         font-weight: 500;
         font-size: 14px;
         text-align: center;
-        width: 16%;
+        width: 60px;
         color: #008766;
     }
 }
@@ -280,7 +292,7 @@ main
 
     .card_txt
     {
-        padding: 14px 0 14px 14px;
+        padding: 16px 0 0 13px;
 
         .paragraph
         {
@@ -291,7 +303,7 @@ main
     .card_icon
     {
         justify-content: center;
-        width: 20.87%;
+        width: 16%;
 
         .fa-heart
         {
@@ -376,6 +388,40 @@ main
 
 
 
+    /* Header */
+
+    .header_title
+    {
+        z-index: initial;
+        
+        .logo
+        {
+            width: 200px;
+        }
+    }
+
+
+
+
+
+    /* Introduction */
+
+    .introduction 
+    {
+        .titre_introduction
+        {
+            font-size: 40px;
+        }
+
+        .introduction_txt
+        {
+            padding: 25px 0;
+        }
+    }
+
+
+
+
     /* Fonctionnement */
 
     .fonctionnement_liste
@@ -423,6 +469,11 @@ main
         {
             display: flex;
             flex-direction: column;
+
+            .badge_card
+            {
+                bottom: 215px;
+            }
         }
     }
 
@@ -436,12 +487,14 @@ main
     {
         display: flex;
         flex-direction: row-reverse;
-        padding-right: 65px;
+        padding: 55px 65px 20px 25px;
 
         .liste
         {
             display: flex;
             justify-content: space-around;
+            width: 50%;
+            padding-right: 30px;
 
             li
             {

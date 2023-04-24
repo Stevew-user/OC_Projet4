@@ -100,8 +100,6 @@ header
 main
 {
     margin-top: -55px;
-    border-radius: 35px 35px 0 0;
-    background: #f7f7f7;
     z-index: 1;
     position: relative;
 }
@@ -109,6 +107,8 @@ main
 .main_container
 {
     padding: 32px 13px 0 13px;
+    border-radius: 35px 35px 0 0;
+    background: #f7f7f7;
 
     .titre
     {
@@ -251,5 +251,59 @@ main
     .page_container
     {
         max-width: none;
+    }
+
+
+
+
+
+    /* Header */
+    
+    header
+    {
+        .logo
+        {
+            width: 15%;
+        }
+    }   
+    
+    .image_plat
+    {
+        height: 400px;
+    }
+
+
+
+
+    
+    /* Main */
+
+    main
+    {
+        margin: -55px 190px 0 190px;
+
+        .main_container
+        {
+            padding: 32px 210px 0 210px;
+
+            .titre
+            {
+                width: initial;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+
+
+
+
+    /* Footer */
+
+    .footer_container
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 55px 65px 20px 25px;
     }
 }
