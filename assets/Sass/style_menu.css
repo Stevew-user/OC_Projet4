@@ -117,10 +117,14 @@ main {
   overflow: hidden;
 }
 .card .plat_confirm {
-  display: none;
-  position: absolute;
-  right: -50px;
-  content: "check";
+  background-color: #99e2d0;
+  width: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -200px;
+  transition-duration: 0.5s;
+  height: 69px;
 }
 .card .plat_confirm .fa-check {
   padding: 4px;
@@ -129,14 +133,7 @@ main {
   color: #99e2d0;
 }
 .card:hover .plat_confirm {
-  width: 60px;
-  height: 68px;
-  background-color: #99e2d0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 15px 15px 0;
-  position: initial;
+  margin-right: initial;
 }
 .card .plat {
   margin: 12px 0 12px 15px;
@@ -161,6 +158,10 @@ main {
 }
 .card .prix {
   padding: 0 13px 13px 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 13px;
 }
 .card:hover .prix {
   padding-right: 0;
@@ -243,6 +244,9 @@ main {
   }
   main .main_container .plat_container {
     width: 65%;
+  }
+  .card:hover .prix {
+    position: relative;
   }
   /* Footer */
   .footer_container {

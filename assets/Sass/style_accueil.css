@@ -74,11 +74,12 @@ header {
   padding-right: 16px;
 }
 .recherche_container .barre_recherche {
-  width: 37%;
+  width: 112px;
 }
 .recherche_container .barre_recherche .txt_recherche {
   background: #eaeaea;
   border: none;
+  width: 120px;
 }
 
 /* Introduction */

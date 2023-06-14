@@ -167,10 +167,14 @@ main
 
     .plat_confirm
     {
-        display: none;
-        position: absolute;
-        right: -50px;
-        content: "check";
+        background-color: $tertiaire;
+        width: 59px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -200px;
+        transition-duration: 0.5s;
+        height: 69px;
 
         .fa-check
         {
@@ -183,14 +187,7 @@ main
     
     &:hover .plat_confirm
     {
-        width: 60px;
-        height: 68px;
-        background-color: $tertiaire;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 15px 15px 0;
-        position: initial;
+        margin-right: initial;
     }
 
     .plat
@@ -225,6 +222,10 @@ main
     .prix
     {
         padding: 0 13px 13px 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 13px;
     }
 
     &:hover .prix
@@ -361,6 +362,14 @@ main
             {
                 width: 65%;
             }
+        }
+    }
+
+    .card
+    {
+        &:hover .prix
+        {
+            position: relative;
         }
     }
 
