@@ -164,6 +164,7 @@ main
     margin: 12px 0;
     align-items: end;
     overflow: hidden;
+    position: relative;
 
     .plat_confirm
     {
@@ -221,7 +222,7 @@ main
 
     .prix
     {
-        padding: 0 13px 13px 0;
+        padding-bottom: 13px;
         display: flex;
         justify-content: center;
         position: absolute;
@@ -232,7 +233,7 @@ main
     {
         padding-right: 0;
         position: absolute;
-        right: 85px;
+        right: 72px;
     }
 }
 
@@ -368,14 +369,6 @@ main
             {
                 width: 65%;
             }
-        }
-    }
-
-    .card
-    {
-        &:hover .prix
-        {
-            position: relative;
         }
     }
 
