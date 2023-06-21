@@ -250,6 +250,12 @@ main
         /* Shadow/Button */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
+
+        &:hover
+        {
+            background: linear-gradient(0deg, lighten($primaire, 5%), lighten($secondaire, 5%));
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
     }
 }
 
