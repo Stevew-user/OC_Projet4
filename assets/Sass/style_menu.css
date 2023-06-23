@@ -40,6 +40,32 @@ ul {
   transition-duration: 0.5s;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card_1 {
+  animation: apparition 600ms ease-in;
+}
+
+.card_2 {
+  animation: apparition 900ms ease-in;
+}
+
+.card_3 {
+  animation: apparition 1.2s ease-in;
+}
+
+.card_4 {
+  animation: apparition 1.5s ease-in;
+}
+
 /* Général */
 .page_container {
   margin: 0 auto;
@@ -228,7 +254,7 @@ main {
   }
   /* Header */
   header .logo {
-    width: 15%;
+    width: 190px;
   }
   .image_plat {
     height: 400px;
@@ -249,6 +275,9 @@ main {
   }
   main .main_container .plat_container {
     width: 65%;
+  }
+  main .plat {
+    width: 75%;
   }
   /* Footer */
   .footer_container {
