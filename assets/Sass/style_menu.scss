@@ -47,6 +47,14 @@ ul
     line-height: 19px;
 }
 
+.txt_overflow
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
 
 
 
@@ -207,16 +215,6 @@ main
             font-size: 18px;
             line-height: 21px;
             padding-bottom: 5px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        p
-        {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
         }
     }
 
@@ -227,6 +225,7 @@ main
         justify-content: center;
         position: absolute;
         right: 13px;
+        transition-duration: 0.5s;
     }
 
     &:hover .prix

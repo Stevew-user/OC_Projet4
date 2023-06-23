@@ -33,6 +33,13 @@ ul {
   line-height: 19px;
 }
 
+.txt_overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
 /* Général */
 .page_container {
   margin: 0 auto;
@@ -148,14 +155,6 @@ main {
   font-size: 18px;
   line-height: 21px;
   padding-bottom: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.card .plat p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .card .prix {
   padding-bottom: 13px;
@@ -163,6 +162,7 @@ main {
   justify-content: center;
   position: absolute;
   right: 13px;
+  transition-duration: 0.5s;
 }
 .card:hover .prix {
   padding-right: 0;
