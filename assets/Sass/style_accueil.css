@@ -307,7 +307,6 @@ main {
   .page_container {
     max-width: none;
   }
-  /* Loader */
   /* Header */
   .header_title {
     z-index: initial;
